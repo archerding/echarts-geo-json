@@ -23,12 +23,16 @@ let serachFromAMap = async () => {
 }
 
 let rows = [];
-let map = {};
+let list = [];
 let printAreaRow = (district) => {
     for (let item of district.districts) {
         if (item.adcode !== district.adcode) {
             rows.push(`${item.name}, ${item.adcode}, ${item.level}`);
-            map[item.name] = item.adcode;
+            list.push({
+                name: item.name,
+                adcode: item.adcode,
+                level: item.level
+            });
             printAreaRow(item);
         }
     }
@@ -45,7 +49,7 @@ let printAreaRow = (district) => {
             }
             console.log('省市区县行政信息已保存至adcode-map.csv');
         })
-        fs.writeFile('json/adcode-map.json', JSON.stringify(map), (err) => {
+        fs.writeFile('json/adcode-map.json', JSON.stringify(list), (err) => {
             if (err) {
                 return console.log(err);
             }

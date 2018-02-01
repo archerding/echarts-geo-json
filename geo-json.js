@@ -30,7 +30,7 @@ let parseToFeature = (district) => {
     feature.type = 'Feature';
     feature.properties = {};
     feature.properties.name = district.name;
-    feature.properties.cp = district.center;
+    feature.properties.cp = district.center.split(',').map(item => Number(item));
 
     let polylines = district.polyline.split('|');
     let coordinates = [];
