@@ -1,0 +1,22 @@
+{
+  "name": "echarts-geo-json",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArcherDing/echarts-geo-json.git"
+  },
+  "author": "ArcherDing(archerding@163.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArcherDing/echarts-geo-json/issues"
+  },
+  "homepage": "https://github.com/ArcherDing/echarts-geo-json#readme",
+  "dependencies": {
+    "axios": "^0.17.1"
+  }
+}
