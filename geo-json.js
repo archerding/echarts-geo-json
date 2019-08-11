@@ -2,6 +2,7 @@ const fs = require('fs');
 const axios = require('axios');
 const parser = require('./lib/parseGeoJson.js');
 
+// 请自行申请高德地图key填写到数组中
 const keys = [];
 
 let serachFromAMap = async (adcode, polyline) => {
