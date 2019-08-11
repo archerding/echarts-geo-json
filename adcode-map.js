@@ -1,5 +1,7 @@
 const fs = require('fs');
 const axios = require('axios');
+
+// 请自行申请高德地图key填写到数组中
 const keys = [];
 
 let serachFromAMap = async () => {
