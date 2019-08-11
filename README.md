@@ -11,6 +11,7 @@
 * [x] 生成echarts指定的的GeoJson数据
 * [x] 采用ZigZag编码压缩coordinates
 
+如需更新数据请自行申请高德地图key
 ## Run
 ```shell
 npm run start
