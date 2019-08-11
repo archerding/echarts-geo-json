@@ -2,9 +2,7 @@ const fs = require('fs');
 const axios = require('axios');
 const parser = require('./lib/parseGeoJson.js');
 
-const keys = ['3387f2aae76ebd4f915de5ade19634dc', '806178332e93277d48d196c6981d3598', '35ea21e11d1a80d9ef41014a1b8513b4',
-    '27b4b0aeb8dd4c32614f13d3e3fd866f', '09ee92217380c74c07119fbc31191078', '188237b34dde0db2acdb536db5763df9',
-    '5f9f8a5b20757d48f26cce0125f3f24d', '93495dcc4cc8085550fff629c000616e', 'fb206e2bb6c03d6d021de271c64b3d3d'];
+const keys = [];
 
 let serachFromAMap = async (adcode, polyline) => {
     let key = keys[Math.floor(Math.random() * keys.length)];
