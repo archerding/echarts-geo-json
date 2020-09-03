@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/ArcherDing/echarts-geo-json#readme",
   "dependencies": {
-    "axios": "^0.17.1"
+    "axios": "^0.18.1"
   }
 }
